@@ -1,0 +1,11 @@
+#Create a pod with the name redis and with the image redis.
+#kubectl apply -f redis-pod.yaml
+#kubectl delete -f redis-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis
+spec:
+  containers:
+  - name: redis
+    image: redis
